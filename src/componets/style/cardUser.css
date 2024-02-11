@@ -4,9 +4,9 @@
   background-color: white;
   color: black;
   border-radius: 6px;
+  border: 1px solid rgb(184, 172, 172);
+  box-shadow: 0px 0px 5px 0px;
   
-  
-
 
 }hr{
   color: black;
@@ -30,14 +30,30 @@
   margin-right: 10px;
   gap: 5px;
   margin-top: -7px;
+
   
 }.delete{
-  color: red;
-  padding: 5px;
-}.edit{
+  color: rgb(255, 77, 0);
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
+  transition: .2s;
+  
+}.delete:hover{
+  transform: scale(1.1);
+ 
+}
+.edit{
   color: blue;
-  padding: 5px;
-}.item_correo{
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
+  transition: .2s;
+}.edit:hover{
+  transform: scale(1.1);
+  
+}
+.item_correo{
   font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
   opacity: .3;

@@ -1,14 +1,29 @@
 
 body{
-  background-color: black;
-  color: white;
+  background-color: #ffffff;
+  color: black;
 }.card_user{
   display: grid;
   grid-template-columns:repeat(auto-fill, minmax(18rem, 2fr));
-  grid-auto-rows: 13rem;
+  grid-auto-rows: 14rem;
   gap: 7px 7px;
   margin-left: 0px; 
 }.create_users{
- margin-left: 190vh;
- margin-bottom:20px;
+
+ 
+ background-color: #2c357e;
+ color: white;
+ height: 40px;
+ margin-top: 25px;
+ transition: .5s;
+ cursor: pointer;
+
+}.create_users:hover{
+  transform: scale(1.1);
+  
+}
+.container{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
 }

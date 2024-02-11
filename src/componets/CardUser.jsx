@@ -21,13 +21,14 @@ const CardUser = ({user,deleteUser,setIsOpen}) => {
             </li>
             <li className='item'>
                 <span className='item_birthday'>CUMPLEAÑOS</span><br></br>
-                <span><ion-icon name="gift"></ion-icon>  {user.birthday}</span>
+                <span><ion-icon name="trash-outline"></ion-icon>  {user.birthday}</span>
             </li>
             <hr className='linea'/>
             
         </ul>
         <div className='btn'> 
-            <button className='delete' onClick={handleDelete}><ion-icon name="trash-outline"></ion-icon></button>
+        <button className='delete' onClick={handleDelete}><ion-icon name="trash-outline"></ion-icon></button>
+
             <button className='edit' onClick={handleEdit}><ion-icon name="create-outline"></ion-icon></button>
             </div> 
     </div>

@@ -25,7 +25,8 @@ function App() {
   return (
    
       <div>
-        <h1>Usuarios</h1><button className='create_users' onClick={handleOpen}>+ crear usuario</button>
+        <div className='container'>
+        <h1>Usuarios</h1><button className='create_users' onClick={handleOpen}>+ Crear nuevo usuario</button></div>
        
         <FormUser
         createUser={createUser}
