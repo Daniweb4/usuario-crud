@@ -1,0 +1,14 @@
+
+body{
+  background-color: black;
+  color: white;
+}.card_user{
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(18rem, 2fr));
+  grid-auto-rows: 13rem;
+  gap: 7px 7px;
+  margin-left: 0px; 
+}.create_users{
+ margin-left: 190vh;
+ margin-bottom:20px;
+}

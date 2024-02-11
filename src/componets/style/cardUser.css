@@ -1,0 +1,48 @@
+.card_container{ 
+  padding: 0;
+  display: block;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  
+  
+
+
+}hr{
+  color: black;
+  opacity: .2;
+  
+}.linea{
+  margin-left: -40px;
+  opacity: .1;
+}
+.item{ 
+  margin-left: -25px;
+}
+.card_list{
+  
+  list-style: none;
+}.card_name{
+  text-align: center;
+}.btn{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  gap: 5px;
+  margin-top: -7px;
+  
+}.delete{
+  color: red;
+  padding: 5px;
+}.edit{
+  color: blue;
+  padding: 5px;
+}.item_correo{
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: .3;
+}.item_birthday{
+  opacity: .3;
+  font-size: 3vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
