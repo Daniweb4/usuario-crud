@@ -38,7 +38,7 @@ const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
                     <div className='card_modal'>
                      <h3 className='title_modal' >¿ Deseas eliminar este usuario.?</h3><br></br>
                     <button className='delete_user' onClick={()=>setIsModal(handleDelete)}>Eliminar</button>
-                    <button className='delete_user' onClick={()=>setIsModal(false)}>Cerrar</button>
+                    <button className='delete_user1' onClick={()=>setIsModal(false)}>Cerrar</button>
                     </div>
                 </form>
             
