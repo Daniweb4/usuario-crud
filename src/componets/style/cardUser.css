@@ -107,6 +107,7 @@ esta en una caja del div*/
   color: white;
   transition: .4s;
   margin-right: 20px;
+  cursor: pointer;
 }.delete_user:hover{
   transform: scale(1.1);
   background-color: rgb(187, 122, 35);
@@ -114,6 +115,7 @@ esta en una caja del div*/
 .delete_user1{
   height: 25px;
   width: 80px;
+  cursor: pointer;
   margin-right: 15px;
   border-radius: 6px;
   background-color: #5488a3;

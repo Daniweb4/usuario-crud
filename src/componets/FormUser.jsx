@@ -37,23 +37,23 @@ return (
       <h2 className='form_title' >Nuevo usuario</h2>
         <div className='form_item'> 
           <label htmlFor="first_name">Nombres</label><br></br>
-          <input className='input_data' {...register('first_name')} id='first_name' type="text" />
+          <input required className='input_data' {...register('first_name')} id='first_name' type="text" />
         </div> 
         <div className='form_item'> 
           <label htmlFor="last_name">Apellidos</label><br></br>
-          <input className='input_data' {...register('last_name')} id='last_name' type="text" />
+          <input required className='input_data' {...register('last_name')} id='last_name' type="text" />
         </div> 
-        <div className='form_item'> 
+        <div  className='form_item'> 
           <label htmlFor="email">Email</label><br></br>
-          <input className='input_data' {...register('email')} id='email' type="email"/>
+          <input required className='input_data' {...register('email')} id='email' type="email"/>
         </div> 
         <div className='form_item'> 
           <label htmlFor="password">Password</label><br></br>
-          <input className='input_data' {...register('password')} id='password' type="password"/>
+          <input required className='input_data' {...register('password')} id='password' type="password"/>
         </div> 
         <div className='form_item'> 
           <label htmlFor="birthday">Cumpleaños</label><br></br>
-          <input className='input_birthday'{...register('birthday')} id='birthday' type="date" />
+          <input required className='input_birthday'{...register('birthday')} id='birthday' type="date" />
         </div>
       
           <button className='save_user' >Guardar usuario</button>
