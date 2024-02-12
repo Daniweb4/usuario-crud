@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import './style/formUser.css';
-const FormUser = ({createUser,isOpen,setIsOpen}) => {
+const FormUser = ({createUser,isOpen,setIsOpen,editUser,updateUser}) => {
     
     const {handleSubmit,register,reset}= useForm();
+    useEffect(() => {
+      reset(editUser);
+      
+    }, [editUser])
     
     const submit=(data)=>{
+      if(editUser){
+        updateUser('/users',editUser.id,data);
+      
+      }else{
         createUser('/users', data);
+      }
         reset({
             email:'',
             password:'',

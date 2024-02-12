@@ -7,6 +7,7 @@ import CardUser from './componets/CardUser';
 
 function App() {
   const url='https://users-crud.academlo.tech/';
+  const [editUser, seteditUser] = useState()
   const [users,getUsers,createUser,deleteUser,updateUser]=useCrud(url);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -30,6 +31,9 @@ function App() {
        
         <FormUser
         createUser={createUser}
+        editUser={editUser}
+       
+        updateUser={updateUser}
         isOpen={isOpen} 
         setIsOpen={setIsOpen}
         /> 
@@ -42,6 +46,7 @@ function App() {
               deleteUser={deleteUser}
               isOpen={isOpen} 
               setIsOpen={setIsOpen}
+              seteditUser={seteditUser}
             
               /> 
 

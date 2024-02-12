@@ -1,12 +1,13 @@
 import React from 'react'
 import './style/cardUser.css'
-const CardUser = ({user,deleteUser,setIsOpen}) => {
+const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
     const handleDelete=()=>{
         deleteUser('/users',user.id);
 
     }
     const handleEdit=()=>{
-        setIsOpen(true)
+        setIsOpen(true);
+        seteditUser(user)
 
     }
 
