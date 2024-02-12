@@ -31,10 +31,11 @@ const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
         </ul>
         <div className='btn'> 
         <button className='delete' onClick={()=>setIsModal(true)}><ion-icon name="trash-outline"></ion-icon></button>
-        {
+        {/**Creaacion del modal 
+         * se pone un codicional para poder abrir la ventana del modal **/
             isModal && (
                 
-                <form className='modal'>
+               <form className='modal'>
                     <div className='card_modal'>
                      <h3 className='title_modal' >¿ Deseas eliminar este usuario.?</h3><br></br>
                     <button className='delete_user' onClick={()=>setIsModal(handleDelete)}>Eliminar</button>
