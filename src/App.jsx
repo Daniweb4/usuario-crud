@@ -10,6 +10,7 @@ function App() {
   const [editUser, seteditUser] = useState()
   const [users,getUsers,createUser,deleteUser,updateUser]=useCrud(url);
   const [isOpen, setIsOpen] = useState(true);
+ 
 
   useEffect(() => {
     getUsers('/users');
@@ -47,6 +48,7 @@ function App() {
               isOpen={isOpen} 
               setIsOpen={setIsOpen}
               seteditUser={seteditUser}
+              
             
               /> 
 

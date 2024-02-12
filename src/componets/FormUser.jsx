@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './style/formUser.css';
 const FormUser = ({createUser,isOpen,setIsOpen,editUser,updateUser}) => {
-    
+  
     const {handleSubmit,register,reset}= useForm();
     useEffect(() => {
       reset(editUser);
@@ -29,6 +29,7 @@ const FormUser = ({createUser,isOpen,setIsOpen,editUser,updateUser}) => {
     const handleClose=()=>{
       setIsOpen(false);
     }
+   
 return (
     <div className={`form_background ${isOpen&&"able"} `}>
       <form className='form_container' onSubmit={handleSubmit(submit)}>

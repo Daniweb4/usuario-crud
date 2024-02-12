@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style/cardUser.css'
 const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
+    const[isModal,setIsModal]=useState(false)
     const handleDelete=()=>{
         deleteUser('/users',user.id);
 
@@ -10,6 +11,7 @@ const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
         seteditUser(user)
 
     }
+    
 
   return (
     <div className='card_container'>
@@ -28,10 +30,24 @@ const CardUser = ({user,deleteUser,setIsOpen,seteditUser}) => {
             
         </ul>
         <div className='btn'> 
-        <button className='delete' onClick={handleDelete}><ion-icon name="trash-outline"></ion-icon></button>
+        <button className='delete' onClick={()=>setIsModal(true)}><ion-icon name="trash-outline"></ion-icon></button>
+        {
+            isModal && (
+                
+                <form className='modal'>
+                     <h3 className='title_modal' >¿ Deseas eliminar este usuario.?</h3><br></br>
+                    <button className='delete_user' onClick={()=>setIsModal(handleDelete)}>Eliminar</button>
+                    <button className='delete_user' onClick={()=>setIsModal(false)}>Cerrar</button>
+                </form>
+            
+            
 
-            <button className='edit' onClick={handleEdit}><ion-icon name="create-outline"></ion-icon></button>
-            </div> 
+            )
+            
+        }
+       
+        <button className='edit' onClick={handleEdit}><ion-icon name="create-outline"></ion-icon></button>
+        </div> 
     </div>
   )
 }
